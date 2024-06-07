@@ -86,14 +86,6 @@ new
 ;
 
 /**
- * # Calls
- */
-
-forward OnProjectileUpdate(Projectile:projid);
-forward OnProjectileStop(Projectile:projid, Float:x, Float:y, Float:z);
-forward OnProjectileCollide(Projectile:projid, collision, Float:x, Float:y, Float:z, extraid);
-
-/**
  * # Internal
  */
 
