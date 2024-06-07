@@ -397,7 +397,7 @@ public Internal_OnProjectilesUpdate() {
 
                     if (((dx * dx) + (dy * dy)) < ((projectileData[i][E_PROJECTILE_OBJECT_COL_RADIUS] + projectileData[i][E_PROJECTILE_PLAYER_COL_RADIUS]) * (projectileData[i][E_PROJECTILE_OBJECT_COL_RADIUS] + projectileData[i][E_PROJECTILE_PLAYER_COL_RADIUS]))) {
                         if (((projectileData[i][E_PROJECTILE_VEL_X] * dx) + (projectileData[i][E_PROJECTILE_VEL_Y] * dy)) < 0.0) {
-                              moveangle = -atan2(dy, dx);
+							moveangle = -atan2(dy, dx);
                             new_vx = ((projectileData[i][E_PROJECTILE_VEL_X] * floatcos(moveangle, degrees)) - (projectileData[i][E_PROJECTILE_VEL_Y] * floatsin(moveangle, degrees)));
                             new_vy = ((projectileData[i][E_PROJECTILE_VEL_X] * floatsin(moveangle, degrees)) + (projectileData[i][E_PROJECTILE_VEL_Y] * floatcos(moveangle, degrees)));
 
