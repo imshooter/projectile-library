@@ -133,12 +133,12 @@ stock Projectile:CreateProjectile(Float:x, Float:y, Float:z, Float:velocityX, Fl
     }
 
     projectileData[projid][E_PROJECTILE_X] = x;
-     projectileData[projid][E_PROJECTILE_Y] = y;
-     projectileData[projid][E_PROJECTILE_Z] = z;
+    projectileData[projid][E_PROJECTILE_Y] = y;
+    projectileData[projid][E_PROJECTILE_Z] = z;
     projectileData[projid][E_PROJECTILE_VEL_X] = velocityX;
     projectileData[projid][E_PROJECTILE_VEL_Y] = velocityY;
     projectileData[projid][E_PROJECTILE_VEL_Z] = velocityZ;
-      projectileData[projid][E_PROJECTILE_ROT_X] = rotationX;
+    projectileData[projid][E_PROJECTILE_ROT_X] = rotationX;
     projectileData[projid][E_PROJECTILE_ROT_Y] = rotationY;
     projectileData[projid][E_PROJECTILE_ROT_Z] = rotationZ;
     projectileData[projid][E_PROJECTILE_GRAVITY] = gravity;
@@ -148,7 +148,7 @@ stock Projectile:CreateProjectile(Float:x, Float:y, Float:z, Float:velocityX, Fl
     projectileData[projid][E_PROJECTILE_OBJECT_COL_RADIUS] = sphereColRadius;
     projectileData[projid][E_PROJECTILE_PLAYER_COL_RADIUS] = playerColRadius;
     projectileData[projid][E_PROJECTILE_MASS] = mass;
-     projectileData[projid][E_PROJECTILE_SIMULATION_COLLISION] = collideSimulation;
+    projectileData[projid][E_PROJECTILE_SIMULATION_COLLISION] = collideSimulation;
 
     return projid;
 }
@@ -240,12 +240,12 @@ public Internal_OnProjectilesUpdate() {
         Float:cry,
         extraid,
         Float:dx,
-         Float:dy,
-         Float:dz,
-         Float:moveangle,
-         Float:new_vx,
-         Float:new_vy,
-         Float:new_vz,
+        Float:dy,
+        Float:dz,
+        Float:moveangle,
+        Float:new_vx,
+        Float:new_vy,
+        Float:new_vz,
         Float:speed,
         bool:collision
     ;
